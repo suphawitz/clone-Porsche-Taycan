@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'kanit';
+    src: url('font/kanit/kanit-regular-webfont.woff2') format('woff2'),
+         url('font/kanit/kanit-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppins';
+    src: url('font/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('font/poppins/poppins-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'poppinsbold';
+    src: url('font/poppins/poppins-bold-webfont.woff2') format('woff2'),
+         url('font/poppins/poppins-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+/* ============== Base ============== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'kanit';
+}
+
+a {
+    color: #000;
+    text-decoration: none;
+    transition: all .2s ease;
+    cursor: pointer;
+}
+a:hover {
+    opacity: .6;
+}
+
+input {
+    border: none;
+    background-color: transparent;
+    outline: none;
+    cursor: pointer;
+}
+
+button {
+    border: none;
+    background-color: transparent;
+    color: #000;
+    cursor: pointer;
+}
+
+ul, li {
+    list-style: none;
+}
+
+img {
+    width: 100%;
+}
+
+/* ============== Class general use ============== */
+.container {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+
+
+:root {
+    --back: #000;
+}
+
+
+/* ------- Form Frequently used ------- */
+
