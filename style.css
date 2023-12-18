@@ -1,10 +1,35 @@
-@font-face {
+/* @font-face {
     font-family: 'kanit';
     src: url('font/kanit/kanit-regular-webfont.woff2') format('woff2'),
          url('font/kanit/kanit-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
+@font-face {
+    font-family: 'kanit';
+    src: url('kanit-bold-webfont.woff2') format('woff2'),
+         url('kanit-bold-webfont.woff') format('woff');
+    font-weight: 700;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url('kanit-semibold-webfont.woff2') format('woff2'),
+         url('kanit-semibold-webfont.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'kanit';
+    src: url('kanit-medium-webfont.woff2') format('woff2'),
+         url('kanit-medium-webfont.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+} */
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
+
+
 
 @font-face {
     font-family: 'poppins';
@@ -15,10 +40,10 @@
 }
 
 @font-face {
-    font-family: 'poppinsbold';
+    font-family: 'poppins';
     src: url('font/poppins/poppins-bold-webfont.woff2') format('woff2'),
          url('font/poppins/poppins-bold-webfont.woff') format('woff');
-    font-weight: normal;
+    font-weight: 700;
     font-style: normal;
 
 }
@@ -31,7 +56,7 @@
 }
 
 body {
-    font-family: 'kanit';
+    font-family: 'Kanit', sans-serif;
 }
 
 a {
@@ -40,14 +65,12 @@ a {
     transition: all .2s ease;
     cursor: pointer;
 }
-a:hover {
-    opacity: .6;
-}
 
 input {
     border: none;
     background-color: transparent;
     outline: none;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
@@ -55,6 +78,7 @@ button {
     border: none;
     background-color: transparent;
     color: #000;
+    transition: all .2s ease;
     cursor: pointer;
 }
 
@@ -66,17 +90,227 @@ img {
     width: 100%;
 }
 
-/* ============== Class general use ============== */
-.container {
-    max-width: 1280px;
-    margin: 0 auto;
+/* ============== Custom Class general use, in get bootstrap ============== */
+.ct-fs-xs {
+    font-size: 0.75rem;
+    line-height: 1rem;
+}
+.ct-fs-sm {
+    font-size: 0.875rem;
+    line-height: 1.25rem;
+}
+.ct-fs-base {
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
+.ct-fs-lg {
+    font-size: 1.125rem;
+    line-height: 1.75rem;
+}
+.ct-fs-xl {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+}
+.ct-fs-2x {
+    font-size: 1.5rem;
+    line-height: 2rem;
+}
+.ct-fs-3x {
+    font-size: 1.875rem;
+    line-height: 2.25rem;
+}
+.ct-fs-4x {
+    font-size: 2.25rem;
+    line-height: 2.5rem;
+}
+.ct-fs-5x {
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.ct-text-hover:hover {
+    color: #00b0f4;
+}
+
+.ct-btn-hover:hover {
+    color: #000;
+    background-color: #00b0f4;
 }
 
 
-:root {
-    --back: #000;
+/* ------- Header ------- */
+.header {
+    width: 100%;
+}
+
+.header-menu {
+    position: relative;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.header-logo {
+    width: 200px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.header-model {
+    background: url(images/porsche-bgshow.png) center / cover no-repeat;
+}
+
+.model-type .model-btn {
+    border-bottom: 2px solid transparent;
+}
+.model-type .model-btn:focus {
+    border-bottom: 2px solid #00b0f4;
+}
+
+.model-type button {
+    color: #fff;
+}
+
+.model-class {
+    color: #fff;
+}
+
+.mod-img img {
+    width: 50%;
+}
+
+.mod-btn .btn-items {
+    padding: .6rem 1.2rem;
+    background-color: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+    transition: .2s ease;
+}
+.mod-btn .btn-items:hover {
+    color: #00b0f4;
+    border: 1px solid #00b0f4;
 }
 
 
-/* ------- Form Frequently used ------- */
+/* ------- Navbar, Position sticky ------- */
+.navbar {
+    width: 100%;
+}
 
+.nav-menu {
+    display: flex;
+    overflow: auto;
+    gap: 1rem;
+    padding: 10px;
+    scroll-snap-type: x mandatory;
+    scroll-padding: 10px;
+}
+
+.nav-menu-items {
+    padding-left: 2rem;
+    flex: 0 0 auto;
+    scroll-snap-align: center;
+    scroll-snap-stop: always;
+    cursor: pointer;
+}
+
+/* ------- Experience ------- */
+.exper {
+}
+
+.exper-content-img {
+    padding: 0 !important;
+    background: url(images/experience.jpg) center / cover no-repeat;
+    /* background-image: url(images/experience.jpg);
+    background-repeat: no-repeat;
+    background-position: center; */
+    color: #fff;
+}
+
+.exper-content-1 {
+    width: 100%;
+    height: 500px;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    background-color: rgba(0,0,0,.6);
+}
+
+.exper-content-1 p a {
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+}
+.exper-content-1 p a:hover {
+    color: #d5001c !important;
+    border-bottom: none;
+}
+
+.exper-content-2 {
+    width: 80%;
+}
+
+.exper-btn-1 button {
+    padding: .8rem 1.4rem;
+    color: #fff !important;
+    background-color: #313639;
+}
+.exper-btn-1 button:hover {
+    background-color: #00b0f4;
+}
+
+.exper-btn-2 button {
+    padding: .8rem 1.4rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.exper-btn-2 button:hover {
+    color: #00b0f4;
+    border: 1px solid #00b0f4;
+}
+
+
+/* ------- 360 Experience ------- */
+.exper360-items img {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    background-color: #000;
+}
+
+.exper360-items{
+    position: relative;
+}
+
+.exper360-items a {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90px;
+    height: 90px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    opacity: .7;
+    color: #fff !important;
+    background-color: #000;
+    z-index: 111;
+}
+.exper360-items a:hover {
+    background-color: #00b0f4;
+}
+
+.exper360-menu a {
+    border-bottom: 2px solid transparent;
+}
+.exper360-menu a:hover {
+    border-bottom: 2px solid #00b0f4;
+}
