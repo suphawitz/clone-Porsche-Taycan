@@ -91,6 +91,7 @@ img {
 }
 
 /* ============== Custom Class general use, in get bootstrap ============== */
+/* ------- Custom font size ------- */
 .ct-fs-xs {
     font-size: 0.75rem;
     line-height: 1rem;
@@ -128,6 +129,7 @@ img {
     line-height: 1;
 }
 
+/* ------- Custom button or btn and text a ------- */
 .ct-text-hover:hover {
     color: #00b0f4;
 }
@@ -137,7 +139,38 @@ img {
     background-color: #00b0f4;
 }
 
+.ct-btn-dark {
+    display: flex;
+    align-items: center;
+    padding: .8rem 1.4rem;
+    color: #fff !important;
+    background-color: #313639;
+}
+.ct-btn-dark:hover {
+    background-color: #00b0f4;
+}
 
+
+.exper-btn-1 button {
+ 
+    padding: .8rem 1.4rem;
+    color: #fff !important;
+    background-color: #313639;
+}
+
+
+.exper-btn-2 button {
+    padding: .8rem 1.4rem;
+    background-color: #fff;
+    color: #000;
+    border: 1px solid #000;
+}
+.exper-btn-2 button:hover {
+    color: #00b0f4;
+    border: 1px solid #00b0f4;
+}
+
+/* ============== Style in main content ============== */
 /* ------- Header ------- */
 .header {
     width: 100%;
@@ -219,9 +252,6 @@ img {
 }
 
 /* ------- Experience ------- */
-.exper {
-}
-
 .exper-content-img {
     padding: 0 !important;
     background: url(images/experience.jpg) center / cover no-repeat;
@@ -253,30 +283,8 @@ img {
     width: 80%;
 }
 
-.exper-btn-1 button {
-    padding: .8rem 1.4rem;
-    color: #fff !important;
-    background-color: #313639;
-}
-.exper-btn-1 button:hover {
-    background-color: #00b0f4;
-}
-
-.exper-btn-2 button {
-    padding: .8rem 1.4rem;
-    background-color: #fff;
-    color: #000;
-    border: 1px solid #000;
-}
-.exper-btn-2 button:hover {
-    color: #00b0f4;
-    border: 1px solid #00b0f4;
-}
-
-
 /* ------- 360 Experience ------- */
 .exper360-items img {
-    width: 100%;
     height: 600px;
     object-fit: cover;
     background-color: #000;
@@ -313,4 +321,87 @@ img {
 }
 .exper360-menu a:hover {
     border-bottom: 2px solid #00b0f4;
+}
+
+/* ------- Find your Taycan ------- */
+.find-pch {
+    background-color: #eff0f1;
+}
+
+.find-pch img {
+    max-width: 100%;
+    height: auto !important;
+}
+
+/* ------- Gallery ------- */
+.gallery {
+    width: 100%;
+    overflow: hidden;
+}
+
+.gallery img {
+    height: 200px !important;
+    width: 100%;
+    object-fit: cover;
+}
+
+.gallery .img-big {
+    height: 400px !important;
+}
+
+
+
+
+.gallery-content-1 {
+    width: 100%;
+    position: relative;
+    color: #fff;
+}
+
+.gallery-content-1::after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+
+    background: linear-gradient(to right,#000 15%,rgba(255,255,255,0) 80%);
+}
+
+.gallery-content-1 img {
+    width: 100%;
+    height: 100% !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+
+
+.gallery-content-2 {
+    width: 100%;
+    background: url(images/gallery-content-2.jpg) center / cover no-repeat;
+    color: #fff;
+}
+.gallery-content-2 .gallback {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to right,#000 15%,rgba(255,255,255,0) 80%);
+}
+
+.gallery-content-1 p,
+.gallery-content-2 p {
+    max-width: 600px;
+}
+
+/* ============== Responsive custom ============== */
+@media only screen and (min-width: 1920px) {
+    .ct-container {
+        max-width: 1690px;
+        margin: 0 auto;
+        overflow: hidden;
+    }
 }
