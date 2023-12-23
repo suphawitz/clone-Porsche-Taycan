@@ -130,8 +130,15 @@ img {
 }
 
 /* ------- Custom button or btn and text a ------- */
+
+.ct-text-hover {
+    display: flex;
+    align-items: center;
+    color: #000;
+}
 .ct-text-hover:hover {
-    color: #00b0f4;
+    color: #00b0f4 !important;
+    transition: all .25s ease;
 }
 
 .ct-btn-hover:hover {
@@ -150,25 +157,19 @@ img {
     background-color: #00b0f4;
 }
 
-
-.exper-btn-1 button {
- 
+.ct-btn-light {
+    display: flex;
+    align-items: center;
     padding: .8rem 1.4rem;
-    color: #fff !important;
-    background-color: #313639;
-}
-
-
-.exper-btn-2 button {
-    padding: .8rem 1.4rem;
-    background-color: #fff;
+    background-color: transparent;
     color: #000;
     border: 1px solid #000;
 }
-.exper-btn-2 button:hover {
+.ct-btn-light:hover {
     color: #00b0f4;
     border: 1px solid #00b0f4;
 }
+
 
 /* ============== Style in main content ============== */
 /* ------- Header ------- */
@@ -350,8 +351,6 @@ img {
 }
 
 
-
-
 .gallery-content-1 {
     width: 100%;
     position: relative;
@@ -380,7 +379,6 @@ img {
 }
 
 
-
 .gallery-content-2 {
     width: 100%;
     background: url(images/gallery-content-2.jpg) center / cover no-repeat;
@@ -395,6 +393,59 @@ img {
 .gallery-content-1 p,
 .gallery-content-2 p {
     max-width: 600px;
+}
+
+/* ------- Next Stap ------- */
+.nextstep-contact button {
+    position: relative;
+    display: block;
+    width: 50px;
+    height: 50px;
+    color: #fff !important;
+}
+.nextstep-contact button:hover {
+    background-color: #00b0f4;
+}
+
+.nextstep-contact button::after {
+    content: "";
+    width: 50px;
+    height: 50px;
+    display: inline-block;
+    background-color: #313639;
+
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* ------- Footer ------- */
+.footer {
+    width: 100%;
+    background-color: #191f22;
+}
+
+.footer-btn {
+    padding: .8rem 1.4rem;
+    color: #fff !important;
+    background-color: #313639;
+}
+
+.footer-copyright {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+.footer-copyright a {
+    margin-left: .5rem;
+    color: #fff !important;
+    border-bottom: 1px solid #fff;
+    transition: all .25s ease;
+}
+.footer-copyright a:hover {
+    color: #00b0f4 !important;
+    border-bottom: 1px solid transparent;
 }
 
 /* ============== Responsive custom ============== */
