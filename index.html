@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Clone Porsche Taycan | Su_phawit</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="src/style.css">
     <link rel="icon" type="image/png" href="images/porsche-logo-01.png"/>
 
     <link rel="stylesheet" href="fontawsome/css/all.min.css">
@@ -76,27 +76,26 @@
         <!-- End Header -->
 
         <!-- Navbar -->
-        <nav class="position-sticky top-0" style="background-color: #fff; z-index: 999;">
+        <nav class="ct-navbar position-sticky top-0" style="background-color: #fff; z-index: 999;">
             <div class="container">
                 <ul class="nav-menu">
-                    <li class="nav-menu-items"><a href="#"> 360° Experience </a></li>
+                    <li class="nav-menu-items"><a href="#exper"> 360° Experience </a></li>
                     <li class="nav-menu-items"><a href="#"> Highlight </a></li>
-                    <li class="nav-menu-items"><a href="#"> Highlights </a></li>
                     <li class="nav-menu-items"><a href="#"> Range calculation </a></li>
                     <li class="nav-menu-items"><a href="#"> Details </a></li>
                     <li class="nav-menu-items"><a href="#"> Models & Data </a></li>
-                    <li class="nav-menu-items"><a href="#"> Find your Porsche </a></li>
-                    <li class="nav-menu-items"><a href="#"> Gallery </a></li>
-                    <li class="nav-menu-items"><a href="#"> Personalisation </a></li>
-                    <li class="nav-menu-items"><a href="#"> Contact </a></li>
-                    <li class="nav-menu-items"><a href="#"> Next steps </a></li>
+                    <li class="nav-menu-items"><a href="#find-pch"> Find your Porsche </a></li>
+                    <li class="nav-menu-items"><a href="#gallery"> Gallery </a></li>
+                    <li class="nav-menu-items"><a href="#personal"> Personalisation </a></li>
+                    <li class="nav-menu-items"><a href="#contact"> Contact </a></li>
+                    <li class="nav-menu-items"><a href="#nextstep"> Next steps </a></li>
                 </ul>
             </div>
         </nav>
         <!-- End Navbar -->
 
         <!-- Experience -->
-        <div class="exper">
+        <section class="exper" id="exper">
             <div class="exper-content">
                 <div class="row align-items-center justify-content-center m-0">
                     <div class="col-7 exper-content-img">
@@ -118,35 +117,63 @@
                     </div>
                 </div>
             </div>
-        </div>
+
+            <!-- 360 Experience -->
+            <div class="exper360 pt-4" id="exper360">
+                <div class="container pb-3">
+                    <h1 class="fw-semibold">360° Experience.</h1>
+                    <div class="exper360-menu d-flex gap-3 py-2">
+                        <a href="#" class="ct-fs-base fw-semibold me-3">Taycan</a>
+                        <a href="#" class="ct-fs-base fw-semibold me-3">Taycan Cross Turismo</a>
+                        <a href="#" class="ct-fs-base fw-semibold me-3">Interior:Cross Turismo</a>
+                    </div>
+                </div>
+
+                <div class="exper360-img row m-0">
+                    <div class="exper360-items col-lg-6 col-sm-12 p-0">
+                        <img src="images/360-car.jpg" alt="">
+                        <a href="#" class="fs-5">360° <i class="fa-solid fa-repeat" style="padding-right: px;"></i></a>
+                    </div>
+                    <div class="exper360-items col-lg-6 col-sm-12 p-0">
+                        <img src="images/360-consol.jpg" alt="">
+                        <a href="#" class="fs-5">360° <i class="fa-solid fa-repeat"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- End 360 Experience -->
+
+            <!-- Experience Parallax -->
+            <div class="exper-parallax">
+                <div class="exper-parallax-content-1">
+                    <div class="container">
+                        <div class="row align-items-center" style="height: 100vh;">
+                            <div class="col-5">
+                                <h1 class="fs-1 fw-semibold">Two body shapes.</h1>
+                                <h2 class="fs-3 fw-semibold pt-2 pb-4">Taycan</h2>
+                                <p>The Taycan is uncompromising and perfect for the everyday. Striking proportions, timeless and instantly recognisable design. With a spacious interior and two luggage compartments, providing comfort and convenience for four.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exper-parallax-content-2">
+                    <div class="container">
+                        <div class="row align-items-center" style="height: 100vh;">
+                            <div class="col-5">
+                                <h2 class="fs-3 fw-semibold pb-4">Taycan 4 Cross Turismo</h2>
+                                <p>The Taycan Cross Turismo embraces your lifestyle, with an enlarged rear luggage compartment and even more spacious interior. Its bold capability is further highlighted by the characteristic accents of the Off-road Design Package.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <!-- End Experience Parallax -->
+
+        </section>
         <!-- End Experience -->
 
-        <!-- 360 Experience -->
-        <div class="exper360 pt-4">
-            <div class="container pb-3">
-                <h1 class="fw-semibold">360° Experience.</h1>
-                <div class="exper360-menu d-flex gap-3 py-2">
-                    <a href="#" class="ct-fs-base fw-semibold me-3">Taycan</a>
-                    <a href="#" class="ct-fs-base fw-semibold me-3">Taycan Cross Turismo</a>
-                    <a href="#" class="ct-fs-base fw-semibold me-3">Interior:Cross Turismo</a>
-                </div>
-            </div>
-
-            <div class="exper360-img row m-0">
-                <div class="exper360-items col-lg-6 col-sm-12 p-0">
-                    <img src="images/360-car.jpg" alt="">
-                    <a href="#" class="fs-5">360° <i class="fa-solid fa-repeat" style="padding-right: px;"></i></a>
-                </div>
-                <div class="exper360-items col-lg-6 col-sm-12 p-0">
-                    <img src="images/360-consol.jpg" alt="">
-                    <a href="#" class="fs-5">360° <i class="fa-solid fa-repeat"></i></a>
-                </div>
-            </div>
-        </div>
-        <!-- End 360 Experience -->
-
         <!-- Find your Taycan -->
-        <div class="find-pch py-4">
+        <section class="find-pch py-4" id="find-pch">
             <div class="container">
                 <div class="row align-items-center">
                     <div class="col-lg-8 col-sm-12">
@@ -161,12 +188,11 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- End Find your Taycan -->
 
-
         <!-- Gallery -->
-        <div class="gallery">
+        <section class="gallery" id="gallery">
             <div class="row">
                 <div class="col-lg-6 p-0">
                     <div class="row">
@@ -196,16 +222,23 @@
                     </div>
                 </div>
             </div>
+        </section>
+        <!-- End Gallery -->
 
-            <div class="gallery-content-1">
+        <!-- Personal and Contact -->
+        <div class="per_con">
+            <!-- Personal -->
+            <section class="personal-content-1" id="personal">
                 <img src="images/gallery-content-1.jpg" alt="">
                 <div class="container py-5 galltop">
                     <h1 class="fw-semibold">Personalisation & finishing.</h1>
                     <p>In the Porsche Exclusive Manufaktur we offer you a variety of personalisation options for exterior and interior. For your completely personalised vehicle.</p>
                     <button class="ct-btn-dark"><i class="fa-solid fa-angle-right pe-2"></i> Personalisation & finishing</button>
                 </div>
-            </div>
-            <div class="gallery-content-2">
+            </section>
+
+            <!-- Contact -->
+            <section class="contact-content-2" id="contact">
                 <div class="gallback">
                     <div class="container py-5">
                         <h1 class="fw-semibold">Contact.</h1>
@@ -213,13 +246,12 @@
                         <button class="ct-btn-dark"><i class="fa-regular fa-share-from-square pe-2" style="font-size: .8rem;"></i> To the contact form</button>
                     </div>
                 </div>
-            </div>
+            </section>
         </div>
-        <!-- End Gallery -->
-
+        <!-- End Personal -->
 
         <!-- Next Step -->
-        <div class="nextstep">
+        <section class="nextstep" id="nextstep">
             <div class="container">
                 <div class="py-5 border-bottom">
                     <h1 class="fw-semibold mb-4">Next Step.</h1>
@@ -279,7 +311,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
         <!-- End Next Step -->
 
         <footer class="footer py-5">
@@ -307,6 +339,8 @@
     <!-- Get Bootstrap and Fontawsome -->
     <script src="bootstrap-5.3.2/js/bootstrap.min.js"></script>
     <script src="fontawsome/js/all.min.js"></script>
+
+    <script src="src/script.js"></script>
 
 </body>
 </html>

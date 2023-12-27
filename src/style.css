@@ -33,16 +33,16 @@
 
 @font-face {
     font-family: 'poppins';
-    src: url('font/poppins/poppins-regular-webfont.woff2') format('woff2'),
-         url('font/poppins/poppins-regular-webfont.woff') format('woff');
+    src: url('../font/poppins/poppins-regular-webfont.woff2') format('woff2'),
+         url('../font/poppins/poppins-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
 
 @font-face {
     font-family: 'poppins';
-    src: url('font/poppins/poppins-bold-webfont.woff2') format('woff2'),
-         url('font/poppins/poppins-bold-webfont.woff') format('woff');
+    src: url('../font/poppins/poppins-bold-webfont.woff2') format('woff2'),
+         url('../font/poppins/poppins-bold-webfont.woff') format('woff');
     font-weight: 700;
     font-style: normal;
 
@@ -129,8 +129,9 @@ img {
     line-height: 1;
 }
 
-/* ------- Custom button or btn and text a ------- */
 
+
+/* ------- Custom button or btn and text a ------- */
 .ct-text-hover {
     display: flex;
     align-items: center;
@@ -171,6 +172,7 @@ img {
 }
 
 
+
 /* ============== Style in main content ============== */
 /* ------- Header ------- */
 .header {
@@ -195,7 +197,7 @@ img {
 }
 
 .header-model {
-    background: url(images/porsche-bgshow.png) center / cover no-repeat;
+    background: url(../images/porsche-bgshow.png) center / cover no-repeat;
 }
 
 .model-type .model-btn {
@@ -230,6 +232,7 @@ img {
 }
 
 
+
 /* ------- Navbar, Position sticky ------- */
 .navbar {
     width: 100%;
@@ -250,12 +253,19 @@ img {
     scroll-snap-align: center;
     scroll-snap-stop: always;
     cursor: pointer;
+    transition: all .25s ease;
 }
+
+.nav_active {
+    padding-bottom: .2rem;
+    border-bottom: 2px solid #00b0f4;
+}
+
 
 /* ------- Experience ------- */
 .exper-content-img {
     padding: 0 !important;
-    background: url(images/experience.jpg) center / cover no-repeat;
+    background: url(../images/experience.jpg) center / cover no-repeat;
     /* background-image: url(images/experience.jpg);
     background-repeat: no-repeat;
     background-position: center; */
@@ -283,6 +293,8 @@ img {
 .exper-content-2 {
     width: 80%;
 }
+
+
 
 /* ------- 360 Experience ------- */
 .exper360-items img {
@@ -324,6 +336,8 @@ img {
     border-bottom: 2px solid #00b0f4;
 }
 
+
+
 /* ------- Find your Taycan ------- */
 .find-pch {
     background-color: #eff0f1;
@@ -333,6 +347,8 @@ img {
     max-width: 100%;
     height: auto !important;
 }
+
+
 
 /* ------- Gallery ------- */
 .gallery {
@@ -351,13 +367,20 @@ img {
 }
 
 
-.gallery-content-1 {
+
+/* ------- Personal and Contact ------- */
+.per_con {
+    width: 100%;
+    overflow: hidden;
+}
+
+.personal-content-1 {
     width: 100%;
     position: relative;
     color: #fff;
 }
 
-.gallery-content-1::after {
+.personal-content-1::after {
     content: "";
     position: absolute;
     right: 0;
@@ -369,31 +392,33 @@ img {
     background: linear-gradient(to right,#000 15%,rgba(255,255,255,0) 80%);
 }
 
-.gallery-content-1 img {
+.personal-content-1 img {
     width: 100%;
     height: 100% !important;
+    object-fit: cover;
     position: absolute;
     top: 0;
     left: 0;
     z-index: -1;
 }
 
-
-.gallery-content-2 {
+.contact-content-2 {
     width: 100%;
-    background: url(images/gallery-content-2.jpg) center / cover no-repeat;
+    background: url(../images/gallery-content-2.jpg) center / cover no-repeat;
     color: #fff;
 }
-.gallery-content-2 .gallback {
+.contact-content-2 .gallback {
     width: 100%;
     height: 100%;
     background: linear-gradient(to right,#000 15%,rgba(255,255,255,0) 80%);
 }
 
-.gallery-content-1 p,
-.gallery-content-2 p {
+.personal-content-1 p,
+.contact-content-2 p {
     max-width: 600px;
 }
+
+
 
 /* ------- Next Stap ------- */
 .nextstep-contact button {
@@ -419,6 +444,8 @@ img {
     left: 0;
     z-index: -1;
 }
+
+
 
 /* ------- Footer ------- */
 .footer {
@@ -447,6 +474,10 @@ img {
     color: #00b0f4 !important;
     border-bottom: 1px solid transparent;
 }
+
+
+
+
 
 /* ============== Responsive custom ============== */
 @media only screen and (min-width: 1920px) {
