@@ -1,35 +1,4 @@
-/* @font-face {
-    font-family: 'kanit';
-    src: url('font/kanit/kanit-regular-webfont.woff2') format('woff2'),
-         url('font/kanit/kanit-regular-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kanit';
-    src: url('kanit-bold-webfont.woff2') format('woff2'),
-         url('kanit-bold-webfont.woff') format('woff');
-    font-weight: 700;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kanit';
-    src: url('kanit-semibold-webfont.woff2') format('woff2'),
-         url('kanit-semibold-webfont.woff') format('woff');
-    font-weight: 600;
-    font-style: normal;
-}
-@font-face {
-    font-family: 'kanit';
-    src: url('kanit-medium-webfont.woff2') format('woff2'),
-         url('kanit-medium-webfont.woff') format('woff');
-    font-weight: 500;
-    font-style: normal;
-} */
-
 @import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600;700&display=swap');
-
-
 
 @font-face {
     font-family: 'poppins';
@@ -278,7 +247,7 @@ img {
     /* display: flex;
     flex-direction: column;
     justify-content: center; */
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, 0.65);
 }
 
 .exper-content-1 p a {
@@ -291,9 +260,9 @@ img {
 }
 
 .exper-content-2 {
-    width: 80%;
+    width: 60%;
+    color: #000;
 }
-
 
 
 /* ------- 360 Experience ------- */
@@ -337,6 +306,49 @@ img {
 }
 
 
+/* --------- Palalax */
+.exper-parallax {
+    background: url(../images/porsche-bgshow.png);
+
+    position: relative;
+    min-height: 500px;
+    width: 100%;
+
+    /* fixed Parallax */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    overflow-x: hidden;
+    /* background: url(../images/porsche-bgshow.png) center / contain no-repeat; */
+}
+
+.exper-parallax::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.477);
+    z-index: 222;
+}
+
+.parallax-model-1,
+.parallax-model-2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-25%, -50%);
+    /* transform: translateX(-50%); */
+}
+
+.parallax-model {
+    max-width: 980px !important;
+    height: 100%;
+    z-index: 1;
+    overflow: hidden;
+}
 
 /* ------- Find your Taycan ------- */
 .find-pch {
@@ -347,8 +359,6 @@ img {
     max-width: 100%;
     height: auto !important;
 }
-
-
 
 /* ------- Gallery ------- */
 .gallery {
@@ -480,6 +490,13 @@ img {
 
 
 /* ============== Responsive custom ============== */
+/* Parallax setting in mobile */
+@media only screen and (max-device-width: 1366px) {
+    .exper-parallax {
+        background-attachment: scroll;
+   }
+}
+
 @media only screen and (min-width: 1920px) {
     .ct-container {
         max-width: 1690px;

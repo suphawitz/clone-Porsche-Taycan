@@ -14,6 +14,10 @@
     <!-- Get Bootstrap -->
     <link rel="stylesheet" href="bootstrap-5.3.2/css/bootstrap.min.css">
 
+    <!-- Get jQuery and ajax -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+
 </head>
 <body>
 
@@ -78,7 +82,7 @@
         <!-- Navbar -->
         <nav class="ct-navbar position-sticky top-0" style="background-color: #fff; z-index: 999;">
             <div class="container">
-                <ul class="nav-menu">
+                <ul class="nav-menu" style="color: #000;">
                     <li class="nav-menu-items"><a href="#exper"> 360° Experience </a></li>
                     <li class="nav-menu-items"><a href="#"> Highlight </a></li>
                     <li class="nav-menu-items"><a href="#"> Range calculation </a></li>
@@ -100,16 +104,18 @@
                 <div class="row align-items-center justify-content-center m-0">
                     <div class="col-7 exper-content-img">
                         <div class="exper-content-1 ps-5 d-flex flex-column justify-content-center">
-                            <h1 class="fs-3 fw-semibold">Information on data processing</h1>
-                            <p class="fs-6 py-3">On our website we provide content from <a href="#">Vimeo</a>. To view this content, you must agree to the data processing by <a href="#">Vimeo</a>.</p>
-                            <div class="exper-btn-1 d-flex align-items-centers gap-3">
-                                <button class="ct-btn-dark"><i class="fa-solid fa-angle-right pe-1"></i> Agree</button>
-                                <button class="ct-btn-dark"><i class="fa-solid fa-angle-right pe-1"></i> Information on data privacy</button>
+                            <div class="col-8">
+                                <h1 class="fs-3 fw-semibold">Information on data processing</h1>
+                                <p class="py-3 ct-fs-sm">On our website we provide content from <a href="#">Vimeo</a>. To view this content, you must agree to the data processing by <a href="#">Vimeo</a>.</p>
+                                <div class="exper-btn-1 d-flex align-items-centers gap-3">
+                                    <button class="ct-btn-dark"><i class="fa-solid fa-angle-right pe-1"></i> Agree</button>
+                                    <button class="ct-btn-dark"><i class="fa-solid fa-angle-right pe-1"></i> Information on data privacy</button>
+                                </div>
                             </div>
                         </div>
                     </div>
                     <div class="col-5 d-flex flex-column align-items-center">
-                        <div class="exper-btn-2 exper-content-2">
+                        <div class="exper-content-2">
                             <h1 class="fs-1 fw-semibold">The new Taycan GTS.</h1>
                             <p class="py-3">The new Taycan GTS now charges the Porsche electric driving experience with even more intense emotions.</p>
                             <button class="ct-btn-light"><i class="fa-regular fa-share-from-square pe-2" style="font-size: .8rem;"></i> Discover Now</button>
@@ -118,10 +124,42 @@
                 </div>
             </div>
 
+             <!-- Experience Parallax -->
+             <div class="exper-parallax">
+                <div class="exper-parallax-content-1">
+                    <div class="container">
+                        <div class="row align-items-center position-relative" style="height: 100vh;">
+                            <div class="col-5 text-light" style="z-index: 333;">
+                                <h1 class="fs-1 fw-semibold">Two body shapes.</h1>
+                                <h2 class="fs-3 fw-semibold pt-2 pb-4">Taycan</h2>
+                                <p>The Taycan is uncompromising and perfect for the everyday. Striking proportions, timeless and instantly recognisable design. With a spacious interior and two luggage compartments, providing comfort and convenience for four.</p>
+                            </div>
+                            <div class="col parallax-model-1">
+                                <img src="images/porsche-model.png" id="parallax-model-1" class="parallax-model" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="exper-parallax-content-2">
+                    <div class="container">
+                        <div class="row align-items-center position-relative" style="height: 100vh;">
+                            <div class="col-5 text-light" style="z-index: 333;">
+                                <h2 class="fs-3 fw-semibold pb-4">Taycan 4 Cross Turismo</h2>
+                                <p>The Taycan Cross Turismo embraces your lifestyle, with an enlarged rear luggage compartment and even more spacious interior. Its bold capability is further highlighted by the characteristic accents of the Off-road Design Package.</p>
+                            </div>
+                            <div class="col parallax-model-2">
+                                <img src="images/porsche-model-4cross.png" id="parallax-model-2" class="parallax-model" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Experience Parallax -->
+
             <!-- 360 Experience -->
             <div class="exper360 pt-4" id="exper360">
                 <div class="container pb-3">
-                    <h1 class="fw-semibold">360° Experience.</h1>
+                    <h1 class="fw-semibold text-black">360° Experience.</h1>
                     <div class="exper360-menu d-flex gap-3 py-2">
                         <a href="#" class="ct-fs-base fw-semibold me-3">Taycan</a>
                         <a href="#" class="ct-fs-base fw-semibold me-3">Taycan Cross Turismo</a>
@@ -142,33 +180,6 @@
             </div>
             <!-- End 360 Experience -->
 
-            <!-- Experience Parallax -->
-            <div class="exper-parallax">
-                <div class="exper-parallax-content-1">
-                    <div class="container">
-                        <div class="row align-items-center" style="height: 100vh;">
-                            <div class="col-5">
-                                <h1 class="fs-1 fw-semibold">Two body shapes.</h1>
-                                <h2 class="fs-3 fw-semibold pt-2 pb-4">Taycan</h2>
-                                <p>The Taycan is uncompromising and perfect for the everyday. Striking proportions, timeless and instantly recognisable design. With a spacious interior and two luggage compartments, providing comfort and convenience for four.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="exper-parallax-content-2">
-                    <div class="container">
-                        <div class="row align-items-center" style="height: 100vh;">
-                            <div class="col-5">
-                                <h2 class="fs-3 fw-semibold pb-4">Taycan 4 Cross Turismo</h2>
-                                <p>The Taycan Cross Turismo embraces your lifestyle, with an enlarged rear luggage compartment and even more spacious interior. Its bold capability is further highlighted by the characteristic accents of the Off-road Design Package.</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-            </div>
-            <!-- End Experience Parallax -->
-
         </section>
         <!-- End Experience -->
 
@@ -180,7 +191,7 @@
                         <img src="images/porsche-preview.png" alt="">
                     </div>
                     <div class="col-lg-4 col-sm-12 d-flex flex-column align-items-start justify-content-center">
-                        <h1 class="fw-semibold mb-4">Find your Taycan Turbo Cross Turismo.</h1>
+                        <h1 class="fw-semibold mb-4 text-black">Find your Taycan Turbo Cross Turismo.</h1>
                         <div class="d-flex flex-column justify-content-center">
                             <button class="ct-btn-dark mb-2"><i class="fa-regular fa-share-from-square pe-2" style="font-size: .8rem;"></i> Find new cars</button>
                             <button class="ct-btn-dark mb-2"><i class="fa-regular fa-share-from-square pe-2" style="font-size: .8rem;"></i> Find per-owned cars</button>
@@ -254,7 +265,7 @@
         <section class="nextstep" id="nextstep">
             <div class="container">
                 <div class="py-5 border-bottom">
-                    <h1 class="fw-semibold mb-4">Next Step.</h1>
+                    <h1 class="fw-semibold mb-4 text-black">Next Step.</h1>
                     <div class="d-flex flex-wrap align-items-center gap-4">
                         <a class="ct-text-hover ct-fs-base" href="#"><i class="fa-solid fa-location-dot pe-2"  style="font-size: 1rem;"></i> Find a Porsche Center</a>
                         <a class="ct-text-hover ct-fs-base" href="#"><i class="fa-solid fa-magnifying-glass-location pe-2"  style="font-size: 1rem;"></i> Genuine accessories</a>
@@ -264,20 +275,20 @@
 
                 <div class="row">
                     <ul class="col-lg-3 col-sm-6">
-                        <li class="ct-fs-lg fw-semibold pb-3 pt-3">Build & Find</li>
+                        <li class="ct-fs-lg fw-semibold pb-3 pt-3 text-black">Build & Find</li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Build your Porsche</a></li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Find Your Porsche</a></li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Find a Porsche Centre</a></li>
                     </ul>
 
                     <ul class="col-lg-3 col-sm-6">
-                        <li class="ct-fs-lg fw-semibold pb-3 pt-3">Online Services</li>
+                        <li class="ct-fs-lg fw-semibold pb-3 pt-3 text-black">Online Services</li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Porsche Login</a></li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">SignUp for Newe</a></li>
                     </ul>
 
                     <ul class="col-lg-3 col-sm-6">
-                        <li class="ct-fs-lg fw-semibold pb-3 pt-3">Behind the Scenes</li>
+                        <li class="ct-fs-lg fw-semibold pb-3 pt-3 text-black">Behind the Scenes</li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Passion Motosports</a></li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Porsche Experience</a></li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Porsche Classic</a></li>
@@ -285,7 +296,7 @@
                     </ul>
 
                     <ul class="col-lg-3 col-sm-6">
-                        <li class="ct-fs-lg fw-semibold pb-3 pt-3">Porsche Company</li>
+                        <li class="ct-fs-lg fw-semibold pb-3 pt-3 text-black">Porsche Company</li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Latest News</a></li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">At a Glance</a></li>
                         <li class="ct-fs-sm py-2"><a class=ct-text-hover href="#">Jobs & Careers</a></li>
