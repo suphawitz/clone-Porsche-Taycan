@@ -185,6 +185,7 @@ img {
 }
 
 .mod-img img {
+    display: inline !important;
     width: 50%;
 }
 
@@ -200,6 +201,55 @@ img {
     border: 1px solid #00b0f4;
 }
 
+.model-slider .slick-arrow {
+    position: absolute;
+    z-index: 10;
+    width: 40px !important;
+    height: 40px !important;
+    border-radius: 50%;
+    background-color: #fff !important;
+    color: #000 !important;
+    transition: all .25s ease;
+}
+
+.model-slider .slick-arrow:hover {
+    color: #fff !important;
+    background-color: #00b0f4 !important;
+}
+
+.model-slider .slick-arrow svg,
+.model-slider .slick-arrow i {
+    font-size: 18px;
+}
+.model-slider .slick-next::before {
+    content: none !important;
+}
+.model-slider .slick-prev::before {
+    content: none !important;
+}
+
+.model-slider-show {
+    padding-bottom: 2rem;
+}
+
+.model-slider .slick-dots {
+    display: block;
+    padding-top: 3rem;
+}
+.model-slider .slick-dots li button::before {
+    content: none !important;
+}
+.model-slider .slick-dots li {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: .5px solid #fff;
+    background-color: #313639;
+}
+
+.model-slider .slick-dots .slick-active {
+    background-color: #00b0f4;
+}
 
 
 /* ------- Navbar, Position sticky ------- */
