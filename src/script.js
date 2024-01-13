@@ -30,6 +30,33 @@ $(document).ready(function(){
         slidesToScroll: 1,
     });
 
+    $('.model-data-slider').slick({
+        centerMode: true,
+        infinite: false,
+        centerPadding: '60px',
+        slidesToShow: 3,
+        responsive: [
+            {
+                breakpoint: 768,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 3
+                }
+            },
+            {
+                breakpoint: 480,
+                settings: {
+                arrows: false,
+                centerMode: true,
+                centerPadding: '40px',
+                slidesToShow: 1
+                }
+            }
+        ]
+    });
+
     $('.model-slider .slick-prev').html('<i class="fa-solid fa-angle-left"></i>');
     $('.model-slider .slick-next').html('<i class="fa-solid fa-angle-right"></i>');
 });
