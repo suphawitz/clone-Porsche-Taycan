@@ -201,7 +201,7 @@ img {
     border: 1px solid #00b0f4;
 }
 
-.model-slider .slick-arrow {
+.slider .slick-arrow {
     position: absolute;
     z-index: 10;
     width: 40px !important;
@@ -212,34 +212,34 @@ img {
     transition: all .25s ease;
 }
 
-.model-slider .slick-arrow:hover {
+.slider .slick-arrow:hover {
     color: #fff !important;
     background-color: #00b0f4 !important;
 }
 
-.model-slider .slick-arrow svg,
-.model-slider .slick-arrow i {
+.slider .slick-arrow svg,
+.slider .slick-arrow i {
     font-size: 18px;
 }
-.model-slider .slick-next::before {
+.slider .slick-next::before {
     content: none !important;
 }
-.model-slider .slick-prev::before {
+.slider .slick-prev::before {
     content: none !important;
 }
 
-.model-slider-show {
+.slider > div {
     padding-bottom: 2rem;
 }
 
-.model-slider .slick-dots {
+.slider .slick-dots {
     display: block;
     padding-top: 3rem;
 }
-.model-slider .slick-dots li button::before {
+.slider .slick-dots li button::before {
     content: none !important;
 }
-.model-slider .slick-dots li {
+.slider .slick-dots li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
@@ -247,7 +247,7 @@ img {
     background-color: #313639;
 }
 
-.model-slider .slick-dots .slick-active {
+.slider .slick-dots .slick-active {
     background-color: #00b0f4;
 }
 
@@ -399,6 +399,64 @@ img {
     z-index: 1;
     overflow: hidden;
 }
+
+
+/* ------- Highlight ------- */
+.highlight-slider {
+    position: relative;
+}
+
+.highlight-slidershow img {
+    width: 100%;
+    height: 450px;
+    object-fit: cover;
+}
+
+.highlight-info .slick-arrow {
+    display: none !important;
+}
+
+.highlight-info .is-active {
+    box-shadow: 0px 0px 8px #ddd !important;
+}
+
+
+/* ------- Model&Data ------- */
+.model-data-slider {
+    margin-left: 5rem;
+}
+
+.modata-slidshow {
+    display: block;
+}
+
+.model-data-slider .slick-arrow {
+    box-shadow: 0px 0px 8px #ddd !important;
+}
+.model-data-slider .slick-next {
+    margin-right: 5rem;
+}
+
+.modata-slidshow {
+    max-width: 600px;
+    /* width: 600px !important; */
+    display: block;
+    box-shadow: 3px 6px 20px #bbb;
+}
+
+.modata-slidshow .row span {
+    border-bottom: 2px solid transparent;
+    transition: all .25s ease-in-out;
+}
+.modata-slidshow:hover .row span {
+    border-bottom: 2px solid #00b0f4;
+
+}
+.modata-info tr td:first-child {
+    width: 40%;
+}
+
+
 
 /* ------- Find your Taycan ------- */
 .find-pch {
