@@ -297,8 +297,8 @@
                 <ul class="nav-menu" style="color: #000;">
                     <li class="nav-menu-items"><a href="#exper"> 360° Experience </a></li>
                     <li class="nav-menu-items"><a href="#highlight"> Highlight </a></li>
-                    <li class="nav-menu-items"><a href="#"> Range calculation </a></li>
-                    <li class="nav-menu-items"><a href="#"> Details </a></li>
+                    <li class="nav-menu-items"><a href="#range"> Range calculation </a></li>
+                    <li class="nav-menu-items"><a href="#detail"> Details </a></li>
                     <li class="nav-menu-items"><a href="#model-data"> Models & Data </a></li>
                     <li class="nav-menu-items"><a href="#find-pch"> Find your Porsche </a></li>
                     <li class="nav-menu-items"><a href="#gallery"> Gallery </a></li>
@@ -395,11 +395,12 @@
         </section>
         <!-- End Experience -->
 
+        <!-- Highlight -->
         <section class="highlight py-5" id="highlight">
             <div class="container">
                 <h1 class="fw-semibold text-black pb-4">Highlight.</h1>
 
-                <div class="highlight-slider">
+                <div class="highlight-slider slider" style="z-index: 2;">
                     <div class="highlight-slidershow">
                         <img src="images/highlight-01.jpg" alt="">
                     </div>
@@ -418,8 +419,8 @@
                 </div>
             </div>
             
-            <div class="highlight-info slider pt-4 ms-5">
-                <div class="highlight-info-show p-3 m-3">
+            <div class="highlight-info slider pt-2 ms-5" style="z-index: 998;">
+                <div class="highlight-info-show p-3 m-3" style="z-index: 998;">
                     <h1 class="fs-5 fw-semibold pb-2">Range.</h1>
                     <p>For the <nobr>Taycan</nobr>, even distant destinations are within easy reach. The Performance Battery Plus provides the <nobr>Taycan</nobr> with a WLTP range of up to 512 kilometres. Reducing the need to stop and charge, allowing you to cover long distances effortlessly.</p>
                 </div>
@@ -442,6 +443,113 @@
             </div>
             
         </section>
+        <!-- End Highlight -->
+
+        <!-- Range calculation -->
+        <section class="range" id="range">
+            <div class="container">
+                <div class="col-8">
+                    <h1 class="fw-semibold text-black">Range calculation.</h1>
+                    <p>With the range indicator, you can determine the estimated range for your journey. The calculation is based on your personal driving profile, your travelling conditions and the respective model equipment. Please select the options relevant for you. </p>
+                    <div class="col-4">
+                        <button class="d-flex align-items-center justify-content-between p-3 w-100" style="border: 1px solid #000;">Taycan <i class="fa-solid fa-caret-down ps-3" style="color: #00b0f4;"></i></button>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-6">
+                        <img src="images/porsche-model.png" alt="">
+                    </div>
+                    <div class="col-6 d-flex flex-column align-items-center justify-content-center">
+                        <span>Estimated range:</span>
+                        <h1 style="font-size: 6rem; margin-top: -15px;">310 km</h1>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xl-4 col-lg-12">we</div>
+                    <div class="col-xl-4 col-lg-6">w4fw</div>
+                    <div class="col-xl-4 col-lg-6">wef</div>
+                </div>
+            </div>
+        </section>
+        <!-- End Range calculation -->
+
+        <!-- Details -->
+        <section class="detail pt-5" id="detail">
+            <div class="container pb-1">
+                <h1 class="fw-semibold text-black">Explore the Taycan and Taycan Cross Turismo models in detail.</h1>
+                <p>Learn more about the highlights of the Taycan, Taycan GTS and Taycan Cross Turismo in these chapters.</p>
+            </div>
+
+            <div class="detail-content d-flex align-items-center">
+                <div class="container detail-info">
+                    <div class="row">
+                        <div class="col-xl-6 col-lg-8 col-sm-12">
+                            <div class="row gap-3">
+                                <div class="detail-list col-12 p-4 d-flex align-items-center justify-content-between gap-5">
+                                    <div class="detail-text">
+                                        <h2>Design</h2>
+                                        <p>View exterior and interior images and wheels.</p>
+                                    </div>
+                                    <div class="detail-open d-flex align-items-center">
+                                        <p class="opacity-0 text-white m-0">Open chapter</p>
+                                        <i class="fa-solid fa-angle-right fs-3"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="detail-list col-12 p-4 d-flex align-items-center justify-content-between gap-5">
+                                    <div class="detail-text">
+                                        <h2>Performance</h2>
+                                        <p>Learn about the drive, chassis and brakes.</p>
+                                    </div>
+                                    <div class="detail-open d-flex align-items-center">
+                                        <p class="opacity-0 text-white m-0">Open chapter</p>
+                                        <i class="fa-solid fa-angle-right fs-3"></i>
+                                    </div>
+                                </div>
+
+                                <div class="detail-list col-12 p-4 d-flex align-items-center justify-content-between gap-5">
+                                    <div class="detail-text">
+                                        <h2>Charging</h2>
+                                        <p>Discover more about the charging concept, charging at home and charging on the road.</p>
+                                    </div>
+                                    <div class="detail-open d-flex align-items-center">
+                                        <p class="opacity-0 text-white m-0">Open chapter</p>
+                                        <i class="fa-solid fa-angle-right fs-3"></i>
+                                    </div>
+                                </div>
+
+                                <div class="detail-list col-12 p-4 d-flex align-items-center justify-content-between gap-5">
+                                    <div class="detail-text">
+                                        <h2>Comfort</h2>
+                                        <p>Explore the interior comfort, infotainment and assistance systems.</p>
+                                    </div>
+                                    <div class="detail-open d-flex align-items-center">
+                                        <p class="opacity-0 text-white m-0">Open chapter</p>
+                                        <i class="fa-solid fa-angle-right fs-3"></i>
+                                    </div>
+                                </div>
+
+                                <div class="detail-list col-12 p-4 d-flex align-items-center justify-content-between gap-5">
+                                    <div class="detail-text">
+                                        <h2>GTS</h2>
+                                        <p>Experience even more intense E-Performance with the Taycan GTS</p>
+                                    </div>
+                                    <div class="detail-open d-flex align-items-center">
+                                        <p class="opacity-0 text-white m-0">Open chapter</p>
+                                        <i class="fa-solid fa-angle-right fs-3"></i>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>  
+                <!-- <div class="detail-img">
+                    <img src="images/explore.jpg" alt="">
+                </div> -->
+            </div>
+        </section>
+        <!-- End Details -->
 
         <!-- Model & Data -->
         <section class="model-data w-100 py-5" id="model-data">
@@ -458,7 +566,7 @@
 
             <div class="model-data-slider slider">
                 <div class="">
-                    <div class="modata-slidshow m-3 ms-4">
+                    <div class="modata-slidshow m-3">
                         <div class="p-5">
                             <div class="row">
                                 <div class="col-7">
@@ -876,6 +984,7 @@
         </section>
         <!-- End Next Step -->
 
+        <!-- Footer -->
         <footer class="footer py-5">
             <div class="container">
                 <h1 class="ct-fs-2x fw-semibold text-light">Change country/region:</h1>
@@ -894,6 +1003,7 @@
                 </div>
             </div>
         </footer>
+        <!-- End Footer -->
     </div>
 
     
