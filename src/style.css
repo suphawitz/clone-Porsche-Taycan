@@ -124,7 +124,7 @@ img {
     background-color: #313639;
 }
 .ct-btn-dark:hover {
-    background-color: #00b0f4;
+    background-color: #00b0f4 !important;
 }
 
 .ct-btn-light {
@@ -262,15 +262,20 @@ img {
 
 
 /* ------- Navbar, Position sticky ------- */
-.navbar {
+.ct-navbar {
     width: 100%;
+    box-shadow: 0 0 8px #acacac;
+}
+
+.ct-navbar ::-webkit-scrollbar {
+    display: none;
 }
 
 .nav-menu {
     display: flex;
     overflow: auto;
     gap: 1rem;
-    padding: 10px;
+    padding: 20px;
     scroll-snap-type: x mandatory;
     scroll-padding: 10px;
 }
@@ -457,21 +462,6 @@ img {
     background: url(../images/explore.jpg) center / cover no-repeat ;
     /* object-fit: cover; */
 }
-
-/* .detail-img {
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 222;
-}
-
-.detail-img img {
-    position: absolute;
-    left: 50%; 
-    top: 50%; 
-    transform: translate(-50%, -50%);
-    object-fit: cover;
-} */
 
 .detail-list {
     background-color: #fff;
