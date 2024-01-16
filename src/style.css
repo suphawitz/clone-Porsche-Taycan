@@ -416,6 +416,9 @@ img {
 
 
 /* ------- Highlight ------- */
+.highlight {
+    overflow: hidden;
+}
 .highlight-slidershow img {
     width: 100%;
     height: 450px;
@@ -502,6 +505,7 @@ img {
 /* ------- Model&Data ------- */
 .model-data-slider {
     margin-left: 5rem;
+    overflow: hidden;
 }
 
 .modata-slidshow {
