@@ -698,3 +698,9 @@ img {
         overflow: hidden;
     }
 }
+
+@media only screen and (max-width: 740px) {
+    .spacs-subtitle {
+        display: none;
+    }
+}
